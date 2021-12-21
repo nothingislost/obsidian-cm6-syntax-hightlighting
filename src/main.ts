@@ -5,13 +5,13 @@ import { LanguageSupport } from "@codemirror/language";
 import { javascript } from "@codemirror/lang-javascript";
 import { syntaxHighlight } from "./syntaxHighlight";
 
-export default class AttributesPlugin extends Plugin {
+export default class SyntaxHighlightingPlugin extends Plugin {
   async onload() {
-    const ext = this.buildAttributesViewPlugin();
+    const ext = this.buildSyntaxViewPlugin();
     this.registerEditorExtension(ext);
   }
 
-  buildAttributesViewPlugin() {
+  buildSyntaxViewPlugin() {
     const viewPlugin = ViewPlugin.fromClass(
       class {
         decorations: DecorationSet;
