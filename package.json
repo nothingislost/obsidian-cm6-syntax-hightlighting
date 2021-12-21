@@ -1,7 +1,7 @@
 {
 	"name": "obsidian-cm6-syntax-hightlighting",
 	"version": "0.0.1",
-	"description": "This is an experimental attributes plugin for CM6. Use with caution as it is very alpha.",
+	"description": "An experimental Obsidian plugin that syntax highlights custom code blocks",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
