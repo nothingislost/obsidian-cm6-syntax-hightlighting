@@ -1,0 +1,10 @@
+{
+  "id": "obsidian-cm6-syntax-hightlighting",
+  "name": "obsidian-cm6-syntax-hightlighting",
+  "version": "0.0.1",
+  "minAppVersion": "0.12.5",
+  "description": "An experimental Obsidian plugin that...",
+  "author": "NothingIsLost",
+  "authorUrl": "https://github.com/nothingislost",
+  "isDesktopOnly": true
+}
