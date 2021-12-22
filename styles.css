@@ -1,13 +1,20 @@
-.cm-line[data-templater-code] {
+.cm-line[data-templater-code],
+.cm-line .cm-inline-code.templater {
   font-family: var(--font-monospace);
   background-color: var(--background-primary-alt);
-  border-left: 1px solid var(--background-secondary);
-  border-right: 1px solid var(--background-secondary);
 }
-.cm-line[data-templater-code] span.cm-inline-code {
+
+.cm-line[data-templater-code]
+  span:not(.cm-atom):not(.cm-bool):not(.cm-class):not(.cm-comment):not(.cm-def):not(.cm-deleted):not(.cm-emphasis):not(.cm-function):not(.cm-heading):not(.cm-inserted):not(.cm-invalid):not(.cm-keyword):not(.cm-labelName):not(.cm-link):not(.cm-literal):not(.cm-local):not(.cm-macroName):not(.cm-meta):not(.cm-modifier):not(.cm-namespace):not(.cm-number):not(.cm-operator):not(.cm-propertyName):not(.cm-punctuation):not(.cm-string):not(.cm-string-2):not(.cm-strong):not(.cm-typeName):not(.cm-url):not(.cm-variable) {
+  all: unset;
+}
+
+.cm-inline-code:not(.templater):not(.cm-atom):not(.cm-bool):not(.cm-class):not(.cm-comment):not(.cm-def):not(.cm-deleted):not(.cm-emphasis):not(.cm-function):not(.cm-heading):not(.cm-inserted):not(.cm-invalid):not(.cm-keyword):not(.cm-labelName):not(.cm-link):not(.cm-literal):not(.cm-local):not(.cm-macroName):not(.cm-meta):not(.cm-modifier):not(.cm-namespace):not(.cm-number):not(.cm-operator):not(.cm-propertyName):not(.cm-punctuation):not(.cm-string):not(.cm-string-2):not(.cm-strong):not(.cm-typeName):not(.cm-url):not(.cm-variable) {
+  all: unset;
+}
+
+.cm-line.templater,
+.cm-line .cm-inline-code.templater {
   font-size: 100%;
-  color: inherit;
-  display: inline;
-  background: none !important;
-  border: none !important;
+  color: unset;
 }
